@@ -1,0 +1,348 @@
+@font-face {
+  font-family: "PT Sans"; /* Гарнитура шрифта */
+  src: url(../fonts/PTSansCaptionRegular.ttf); /* Путь к файлу со шрифтом */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: BebasNeue; /* Гарнитура шрифта */
+  src: url(../fonts/BebasNeueRegular.otf); /* Путь к файлу со шрифтом */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// переменные
+$white: #fff;
+$blue: #40a0e6;
+$green: #889454;
+
+body {
+  border: 2px solid blue;
+  font-family: PTSans, sans-serif;
+  font-size: 20px;
+}
+strong, b {
+  font-weight: bolder;
+}
+
+
+.header {
+  padding: 0;
+  padding-top: 65px;
+  background-color: transparent;
+  position: absolute;
+  display: block;
+  line-height: 22px;
+}
+.green {
+  color: $green;
+}
+.small-logo-container {
+  padding-top: 25px;
+  img {
+    float: left;
+    width: 50px;
+    height: 50px;
+  }
+  .small-logo-txt {
+    float: left;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+}
+.logo-container {
+  text-align: center;
+  width: 100%;
+  .logo-box {
+    display: inline-block;
+  }
+}
+.contact-container {
+  text-align: right;
+  .phone-icon {
+    margin-top: 5px;
+    .phone-icon-img {
+      vertical-align: text-top;
+      margin-top: 3px;
+    }
+    .phone-nomber {
+      display: inline-block;
+      margin-left: 10px;
+      font-family: BebasNeue, serif;
+      font-size: 32px;
+      margin-top: 25px;
+    }
+  }
+  .recall-box {
+    margin-top: 10px;
+    .recall-link {
+      font-family: "PT Sans", sans-serif;
+      font-size: 16px;
+      color: $blue;
+      text-decoration: underline;
+      font-weight: lighter;
+    }
+  }
+}
+
+.first-screen {
+  text-align: center;
+  background: url("../_img/style/bkgr-firstscreen.jpg");
+  background-size: cover;
+}
+.special-offer {
+  line-height: 70px;
+  text-align: center;
+  margin-top: 140px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: $white;
+  .capture {
+    padding-top: 40px;
+    font-family: BebasNeue;
+    font-size: 70px;
+    text-transform: uppercase;
+    span {
+      font-family: BebasNeue, serif;
+      font-weight: 100;
+    }
+
+    b {
+      font-size: 87px;
+      font-weight: 800;
+    }
+  }
+  .pasta {
+    margin-top: 20px;
+  }
+  .notice {
+    margin-top: 10px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.hause-done {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.club-life {
+  padding-top: 75px;
+  padding-bottom: 70px;
+  .description {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+    color: #97979a;
+  }
+  .address {
+    text-transform: uppercase;
+    font-family: BebasNeue, serif;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .club-features {
+    margin-bottom: 70px;
+  }
+  .item-container {
+    vertical-align: middle;
+    .description-item {
+      display: inline-block;
+    }
+  }
+
+}
+.capture {
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: BebasNeue, serif;
+}
+.geo-center {
+  background: url("../_img/style/geo-center.jpg");
+}
+.club-hause {
+  background: url("../_img/style/club-hause.jpg");
+}
+.infrastucture {
+  background: url("../_img/style/infrastruct.jpg");
+}
+.rolling {
+  font-size: 30px;
+  line-height: 100%;
+  vertical-align: middle;
+  display: table-cell;
+  border-radius: 50%;
+  height: 280px;
+  width: 280px;
+  text-align: center;
+  .geo-center__txt {
+    display: inline;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: BebasNeue, serif;
+  }
+}
+.video-presentation {
+  background: url('../_img/style/bckgr-video.jpg');
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 75px;
+
+  .description {
+    text-align: center;
+    color: $white;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: BebasNeue, serif;
+    strong {
+      font-size: 48px;
+    }
+  }
+}
+
+.flat-studio {
+  background: url('../_img/style/bkgr-paperwalls.jpg');
+}
+.flats  {
+  padding-top: 75px;
+  padding-bottom: 80px;
+  .flat-items {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .btn-blue {
+    margin-top: 30px;
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    background-color: $blue;
+    font-size: 24px;
+    font-family: BebasNeue, serif;
+    text-transform: uppercase;
+    width: 240px;
+    padding-top: 12px;
+  }
+  .capture-2 {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: BebasNeue, serif;
+    font-size: 36px;
+    text-align: center;
+  }
+}
+.special-offer {
+  background: url("../_img/style/bkgr-offer.jpg");
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  .capture-spec {
+    font-family: BebasNeue, serif;
+    font-size: 30px;
+    background-color: #f4da7a;
+    display: inline-block;
+  }
+  .capture-welcome {
+    font-family: BebasNeue, serif;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    line-height: 150%;
+  }
+  .checked {
+    vertical-align: text-top;
+  }
+  .offer-item {
+    padding-top: 15px;
+    line-height: 150%;
+    text-align: left;
+  }
+}
+
+.form-container {
+  border: 15px solid #f4da7a;
+  background-color: $white;
+  color: #000;
+  form {
+    padding-bottom: 40px;
+    line-height: normal;
+    .form-caption {
+      font-family: BebasNeue, serif;
+      text-transform: uppercase;
+      font-size: 30px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+    .call-to-action {
+      margin-bottom: 30px;
+      a {
+        color: $blue;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+    .input-box {
+      width: 100%;
+      padding-left: 20px;
+      img {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        left: -20px;
+
+      }
+      .input-field {
+        border: none;
+        padding-bottom: 15px;
+        margin-top: 10px;
+        border-bottom: 1px solid #a6a6a6;
+        width: 90%;
+        outline: none;
+        margin-top: 20px;
+      }
+    }
+    .btn-blue_form {
+      color: $white;
+      margin-top: 30px;
+      border: none;
+      border-radius: 25px;
+      height: 50px;
+      background-color: $blue;
+      font-size: 20px;
+      font-family: BebasNeue, serif;
+      text-transform: uppercase;
+      width: 240px;
+      padding-top: 9px;
+      box-shadow: 0px 21px 50px -16px #a6a6a6;
+      cursor: pointer;
+    }
+  }
+}
+
+.features {
+  padding-top: 70px;
+  .caption {
+    font-family: BebasNeue, serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .features-item {
+    margin-bottom: 50px;
+    .features-item_txt {
+      font-family: BebasNeue, serif;
+      font-size: 30px;
+      text-align: center;
+      padding-top: 15px;
+    }
+    .description {
+      font-size: 16px;
+    }
+  }
+}
