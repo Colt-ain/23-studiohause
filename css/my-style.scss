@@ -1,14 +1,13 @@
+
 @font-face {
-  font-family: "PT Sans"; /* Гарнитура шрифта */
-  src: url(../fonts/PTSansCaptionRegular.ttf); /* Путь к файлу со шрифтом */
+  font-family: "GothamPro"; /* Гарнитура шрифта */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: BebasNeue; /* Гарнитура шрифта */
-  src: url(../fonts/BebasNeueRegular.otf); /* Путь к файлу со шрифтом */
-  font-weight: normal;
+  font-family: "GothamPro"; /* Гарнитура шрифта */
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -17,9 +16,10 @@
 $white: #fff;
 $blue: #40a0e6;
 $green: #889454;
+$black: #000;
+$yellow: #f8e292;
 
 body {
-  border: 2px solid blue;
   font-family: PTSans, sans-serif;
   font-size: 20px;
 }
@@ -28,165 +28,184 @@ strong, b {
 }
 
 
-.header {
-  padding: 0;
-  padding-top: 65px;
-  background-color: transparent;
-  position: absolute;
-  display: block;
-  line-height: 22px;
-}
-.green {
-  color: $green;
-}
-.small-logo-container {
-  padding-top: 25px;
-  img {
-    float: left;
-    width: 50px;
-    height: 50px;
-  }
-  .small-logo-txt {
-    float: left;
-    margin-top: 5px;
-    margin-left: 20px;
-  }
-}
-.logo-container {
-  text-align: center;
-  width: 100%;
-  .logo-box {
-    display: inline-block;
-  }
-}
-.contact-container {
-  text-align: right;
-  .phone-icon {
-    margin-top: 5px;
-    .phone-icon-img {
-      vertical-align: text-top;
-      margin-top: 3px;
-    }
-    .phone-nomber {
-      display: inline-block;
-      margin-left: 10px;
-      font-family: BebasNeue, serif;
-      font-size: 32px;
-      margin-top: 25px;
-    }
-  }
-  .recall-box {
-    margin-top: 10px;
-    .recall-link {
-      font-family: "PT Sans", sans-serif;
-      font-size: 16px;
-      color: $blue;
-      text-decoration: underline;
-      font-weight: lighter;
-    }
-  }
-}
-
 .first-screen {
   text-align: center;
   background: url("../_img/style/bkgr-firstscreen.jpg");
   background-size: cover;
-}
-.special-offer {
-  line-height: 70px;
-  text-align: center;
-  margin-top: 140px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: $white;
-  .capture {
-    padding-top: 40px;
-    font-family: BebasNeue;
-    font-size: 70px;
-    text-transform: uppercase;
-    span {
-      font-family: BebasNeue, serif;
-      font-weight: 100;
-    }
+  padding-top: 65px;
+  .green {
+    color: $green;
+  }
+  .small-logo-container {
+    padding-top: 25px;
 
-    b {
-      font-size: 87px;
-      font-weight: 800;
+    .small-logo-txt {
+      float: left;
+      margin-top: 5px;
+      margin-left: 20px;
+      img {
+        width: 125px;
+        height: 125px;
+      }
     }
   }
-  .pasta {
-    margin-top: 20px;
+  .logo-container {
+    text-align: center;
+    width: 100%;
+    .logo-box {
+      display: inline-block;
+    }
   }
-  .notice {
-    margin-top: 10px;
-    font-family: "PT Sans", sans-serif;
-    font-size: 16px;
-    line-height: 150%;
+
+  .contact-container {
+    text-align: right;
+    padding-top: 20px;
+    .phone-icon {
+      margin-top: 5px;
+      .phone-icon-img {
+        vertical-align: text-top;
+        margin-top: 3px;
+      }
+      .phone-number {
+        display: inline-block;
+        margin-left: 10px;
+        font-family: GothamPro, serif;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 25px;
+      }
+    }
+    .recall-box {
+      margin-top: 10px;
+      .recall-link {
+        font-family: GothamPro, sans-serif;
+        font-size: 16px;
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+  }
+  .special-offer {
+    line-height: 70px;
+    text-align: center;
+    color: $black;
+    .exclusive {
+    }
+    .capture {
+      color: $green;
+      padding-top: 40px;
+      font-family: GothamPro, sans-serif;
+      font-weight: lighter;
+      font-size: 70px;
+      text-transform: uppercase;
+      span {
+        font-family: GothamPro, sans-serif;
+      }
+    }
+    .capture::after {
+      content: "";
+      display: inline-block;
+      width: 270px;
+      height: 4px;
+      background-color: $green;
+    }
+    .pasta {
+      margin-top: 20px;
+    }
+    .notice {
+      margin-top: 10px;
+      font-family: GothamPro, sans-serif;
+      font-size: 24px;
+      line-height: 150%;
+    }
   }
 }
+
 .hause-done {
   margin-top: 80px;
   margin-bottom: 100px;
+  font-size: 28px;
 }
 
 .club-life {
-  padding-top: 75px;
   padding-bottom: 70px;
   .description {
     margin-top: 40px;
     text-align: center;
     font-size: 16px;
-    font-family: "PT Sans", sans-serif;
+    font-family: GothamPro, sans-serif;
     color: #97979a;
   }
   .address {
-    text-transform: uppercase;
-    font-family: BebasNeue, serif;
+    font-family: GothamPro, serif;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    margin-top: 35px;
   }
   .club-features {
     margin-bottom: 70px;
+    .club-features-item {
+      margin-top: 30px;
+      span {
+        padding-left: 20px;
+      }
+    }
   }
   .item-container {
     vertical-align: middle;
     .description-item {
       display: inline-block;
+      height: 100%;
+
     }
   }
 
 }
 .capture {
+  margin-top: 60px;
+  height: 78px;
+  background: linear-gradient(-45deg, transparent 47%, #f4f4f4 47%, #f4f4f4 54%, transparent 54%, transparent 100%);
   text-align: center;
-  font-size: 60px;
+  font-size: 28px;
   text-transform: uppercase;
-  font-family: BebasNeue, serif;
+  font-family: GothamPro, serif;
+  vertical-align: middle;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
 }
 .geo-center {
-  background: url("../_img/style/geo-center.jpg");
+  background: url("../_img/style/bckgr-video.jpg");
 }
 .club-hause {
-  background: url("../_img/style/club-hause.jpg");
+  background: url("../_img/style/bckgr-video.jpg");
 }
 .infrastucture {
-  background: url("../_img/style/infrastruct.jpg");
+  background: url("../_img/style/bckgr-video.jpg");
 }
-.rolling {
-  font-size: 30px;
-  line-height: 100%;
-  vertical-align: middle;
-  display: table-cell;
+.rolling-box {
   border-radius: 50%;
-  height: 280px;
-  width: 280px;
-  text-align: center;
-  .geo-center__txt {
-    display: inline;
-    color: $white;
+  padding-top: 5px;
+  height: 290px;
+  width: 290px;
+  border: 1px dashed $yellow;
+  .rolling {
+    border-radius: 50%;
+    height: 280px;
+    width: 280px;
     text-align: center;
-    text-transform: uppercase;
-    font-family: BebasNeue, serif;
+    padding: 4px;
   }
 }
+.geo-center__txt {
+  color: $black;
+  text-align: center;
+  font-family: GothamPro, serif;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
 .video-presentation {
   background: url('../_img/style/bckgr-video.jpg');
   text-align: center;
@@ -237,8 +256,8 @@ strong, b {
   }
 }
 .special-offer {
-  background: url("../_img/style/bkgr-offer.jpg");
-  font-family: "PT Sans", sans-serif;
+  background-color: transparent;
+  font-family: "GothamPro", sans-serif;
   font-size: 16px;
   padding-top: 80px;
   padding-bottom: 60px;
